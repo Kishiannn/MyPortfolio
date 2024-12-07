@@ -1,11 +1,15 @@
-*{
-    font-family: 'Poppins, sans-serif';
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
 }
-/* Navigation */
 
+/* Navigation */
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
-    width: 100vw;
+    width: 98.5vw;
     height: 10rem;
     margin-right: 100px;
 }
@@ -15,6 +19,7 @@ header{
     font-size: 3rem;
     color: red;
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
 }
 .navbar {
     font-size: 20px;
@@ -90,4 +95,78 @@ input:checked + label:after{
 }
 label:active::after{
     width: 60px;
+}
+/* wallpaper */
+.home-wallpaper img{
+    position: absolute;
+    border-bottom: 3px solid red;
+    top: 0;
+    z-index: -2;
+    width: 98.5vw;
+    height: 25vw;
+}
+.home-profile img{
+    position: absolute;
+    left: 43vw;
+    top: 300px;
+    z-index: -1;
+    border: 3px solid red;
+    border-radius: 100vw;
+    width: 15vw;
+    height: 15vw;
+}
+.profile-info h1{
+    position: absolute;
+    bottom: 270px;
+    left: 43vw;
+    text-align: center;
+    font-size: 50px;
+}
+.home-profile span{
+    position: absolute;
+    bottom: 230px;
+    left: 32vw;
+    text-align: right;
+    font-weight: bold;
+    color: red;
+    font-size: 80px;
+}
+/* About Me 8*/
+#aboutMe{
+    position: relative;
+    top: 50vw;
+}
+.line-top{
+    position: relative;
+    right: 60vw;
+    height: 30px;
+    background-color: red;
+    border: solid red;
+    margin-bottom: 100px;
+}
+.aboutMe-section, span{
+    position: relative;
+    left: 38vw;
+    font-size: 100px;
+    font-weight: bold;
+    color: red;
+}
+.box{
+    position: relative;
+    top: px;
+    left: 29.5vw;
+    width: 40vw;
+    border: solid red;
+}
+.aboutMe-section, p{
+    position: relative;
+    font-size: 25px;
+}
+.line-bottom{
+    position: relative;
+    left: 61vw;
+    height: 30px;
+    background-color: red;
+    border: solid red;
+    margin-top: 100px;
 }
