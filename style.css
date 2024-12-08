@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
     min-height: 100vh;
@@ -156,11 +159,11 @@ label:active::after{
     top: px;
     left: 29.5vw;
     width: 40vw;
-    border: solid red;
 }
 .aboutMe-section, p{
     position: relative;
     font-size: 25px;
+    text-align: justify;
 }
 .line-bottom{
     position: relative;
