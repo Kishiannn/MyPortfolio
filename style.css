@@ -3,7 +3,7 @@ html {
 }
 body{
     overflow-x: hidden;
-    min-height: 100vh;
+    min-height: 500vh;
 }
 
 /* Navigation */
@@ -171,5 +171,28 @@ label:active::after{
     height: 30px;
     background-color: red;
     border: solid red;
+    margin-top: 100px;
+}
+/* Skills */
+#skills{
+    position: relative;
+    top: 60vw;
+}
+.tag{
+    position: relative;
+    left: 43vw;
+    font-size: 100px;
+    color: red;
+}
+.skill-line{
+    width: 50%;
+    border: solid red;
+}
+.skills-box{
+    display: grid;
+    grid-template-rows: repeat(4, 100px); 
+    width: 200px;
+    height: auto;
+    border: 2px solid red;
     margin-top: 100px;
 }
