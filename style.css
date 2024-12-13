@@ -190,14 +190,16 @@ label:active::after{
 }
 .skill-container{
     display: grid;
-    justify-content: center;
-    gap: 10px; /* Space between boxes */
+   position: relative;
+   left: 12vw;
+   top: 100px;
+   gap: 200px;
+   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 .skill-box{
-    display: grid;
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    padding: 20px;
-    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
 }
