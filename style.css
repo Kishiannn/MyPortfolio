@@ -188,18 +188,16 @@ label:active::after{
     width: 50%;
     border: solid red;
 }
-.skills-container{
+.skill-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    border: 2px solid red;
+    justify-content: center;
+    gap: 10px; /* Space between boxes */
 }
-.skills-box{
-    background-color: var(--main-color);
-    width: 100%;
-    height: 700px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-bottom: 200px;
+.skill-box{
+    display: grid;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    padding: 20px;
+    border: 1px solid #ccc;
 }
