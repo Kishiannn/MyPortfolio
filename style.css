@@ -189,13 +189,15 @@ label:active::after{
     border: solid red;
 }
 .skill-container{
-    display: grid;
-    gap: 200px;
-   grid-template-columns: repeat(4, minmax(100px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 200px;
+    gap: 10px;
+    
 }
 .skill-box{
     border: 2px solid red;
-    height: 100px;
-    width: 100px;
-   grid-template-columns: repeat(4, minmax(100px, 1fr));
+    height: 350px;
+    width: 350px;
 }
